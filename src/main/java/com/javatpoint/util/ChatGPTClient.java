@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ChatGPTClient {
     private static final String API_URL = "https://api.openai.com/v1/chat/completions";
-    private static final String API_KEY = "";  // Substitua pela sua chave da OpenAI
+    
     private static final int MAX_TOKENS = 8000; // Ajuste conforme necessário
 
     private List<JSONObject> contextHistory = new ArrayList<>();
