@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans     
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context 
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:component-scan base-package="com.javatpoint" />
+	<context:annotation-config />
+
+	<bean id="userService" class="com.javatpoint.service.UserServiceImpl" />
+	<bean id="userDao" class="com.javatpoint.dao.UserDaoImpl" />
+	<bean id="hotelService" class="com.javatpoint.service.HotelServiceImpl" />
+	<bean id="hotelDao" class="com.javatpoint.dao.HotelDaoImpl" />
+	<bean id="addressService" class="com.javatpoint.service.AddressServiceImpl" />	
+	<bean id="addressDao" class="com.javatpoint.dao.AddressDaoImpl" />
+        <bean id="unitDao" class="com.javatpoint.dao.UnitDaoImpl" />
+        <bean id="unitService" class="com.javatpoint.service.UnitServiceImpl" />
+        <bean id="disponibilityDao" class="com.javatpoint.dao.DisponibilityDaoImpl" />
+        <bean id="disponibilityService" class="com.javatpoint.service.DisponibilityServiceImpl" />
+        <bean id="mediaDao" class="com.javatpoint.dao.MediaDaoImpl" />
+        <bean id="mediaService" class="com.javatpoint.service.MediaServiceImpl" />
+	<bean id="geoService" class="com.javatpoint.service.GeoServiceImpl" />
+        <bean id="geoDao" class="com.javatpoint.dao.GeoDaoImpl" />
+        <bean id="attributeDao" class="com.javatpoint.dao.AttributeDaoImpl" />
+        <bean id="attributeService" class="com.javatpoint.service.AttributeServiceImpl" />	
+        <bean id="unitAttributeDao" class="com.javatpoint.dao.UnitAttributeDaoImpl" />                
+        <bean id="unitAttributeService" class="com.javatpoint.service.UnitAttributeServiceImpl" />
+        <bean id="reservationDao" class="com.javatpoint.dao.ReservationDaoImpl" />                
+        <bean id="reservationService" class="com.javatpoint.service.ReservationServiceImpl" />	
+	<bean id="loginValidator" class="com.javatpoint.validator.LoginValidator" />
+	<bean id="userValidator" class="com.javatpoint.validator.UserValidator" />
+	<bean id="unitValidator" class="com.javatpoint.validator.UnitValidator" />
+	<bean id="reservationValidator" class="com.javatpoint.validator.ReservationValidator" />
+	<bean id="hotelValidator" class="com.javatpoint.validator.HotelValidator" />
+	<bean id="contactValidator" class="com.javatpoint.validator.ContactValidator" />
+        <bean id="emailService" class="com.javatpoint.service.EmailServiceImpl" />
+        <bean id="securityService" class="com.javatpoint.service.SecurityServiceImpl" />
+        
+        
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="datasource" />
+	</bean>
+
+	<!--<bean id="datasource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.mariadb.jdbc.Driver" />
+		<property name="url" value="jdbc:mariadb://mysql3000.mochahost.com/twrcom1_dbtw" />
+		<property name="username" value="twrcom1_tw" />
+		<property name="password" value="tw4r2020" />                                
+	</bean>
+	<bean id="datasource"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClassName" value="org.mariadb.jdbc.Driver" />
+		<property name="url" value="jdbc:mariadb://localhost/topweeks" />
+		<property name="username" value="root" />
+		<property name="password" value="" />                
+	</bean>
+        -->
+        <bean id="datasource" class = "com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+            <property name="driverClass" value="org.mariadb.jdbc.Driver" />
+            <property name="jdbcUrl" value="jdbc:mariadb://localhost/topweeks" />
+            <property name="user" value="root" />
+            <property name="password" value="" />
+            <!-- these are C3P0 properties -->
+            <property name="acquireIncrement" value="5" />
+            <property name="minPoolSize" value="5" />
+            <property name="maxPoolSize" value="600" />
+            <property name="maxIdleTime" value="1800" />
+        </bean>
+        
+        <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="jsonMessageConverter"/>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Configure bean to convert JSON to POJO and vice versa -->
+	<bean id="jsonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+	</bean>
+        
+        <bean id="multipartResolver"
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- max upload size in bytes -->
+        <property name="maxUploadSize" value="20971520" /> <!-- 20MB -->
+         
+        <!-- max size of file in memory (in bytes) -->
+        <property name="maxInMemorySize" value="1048576" /> <!-- 1MB -->
+ 
+    </bean>
+
+</beans>

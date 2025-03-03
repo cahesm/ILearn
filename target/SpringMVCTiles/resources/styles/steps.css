@@ -1,0 +1,125 @@
+/* Form Progress */
+
+.stepProgressBox{
+    display: flex;
+}
+
+.stepProgress {
+
+  margin: 20px auto;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: transparent;  
+}
+.stepProgress .circle,
+.stepProgress .bar {
+  display: inline-block;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid #d5d5da;
+  vertical-align:top;
+}
+.stepProgress .bar {
+  position: relative;
+  width: 80px;
+  height: 6px;
+  margin: 0 -3px 17px -3px;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  top:16px;
+  vertical-align:top
+}
+.stepProgress .circle .label {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 32px;
+  margin-top: 3px;
+  color: #b5b5ba;
+  font-size: 17px;
+}
+.stepProgress .circle .title {
+  color: #b5b5ba;
+  font-size: 13px;
+  line-height: 18px;
+  margin-left: -30px;
+  display: block;
+  width: 100px;
+  margin-top: 5px;
+  
+  white-space:pre-wrap;
+  word-break:break-word;
+}
+/* Done / Active */
+
+.stepProgress .bar.done,
+.stepProgress .circle.done {
+  background: #eee;
+}
+.stepProgress .bar.active {
+  background: linear-gradient(to right, #EEE 40%, #FFF 60%);
+}
+.stepProgress .circle.done .label {
+  color: #FFF;
+  background: #8bc435;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, .2);
+}
+.stepProgress .circle.done .title {
+  color: #444;
+}
+.stepProgress .circle.active .label {
+  color: #FFF;
+  background: #F26419;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, .2);
+}
+.stepProgress .circle.active .title {
+  color: #F26419;
+}
+
+
+@media only screen and (max-width: 36em)
+{
+   .stepProgress .bar {
+       width: 65px;
+   }
+   
+   .stepProgress .circle .title {  
+  font-size: 11px !important;  
+  width: 80px;
+  margin-left: -25px;
+  
+  white-space:pre-wrap;
+  word-break:break-word;
+  
+}
+
+.stepProgress .circle .label {
+  
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 28px;
+ 
+  font-size: 14px;
+}
+
+.stepProgress .bar {
+  
+  width: 36px;
+    
+}
+.stepProgress .circle {
+  
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+    
+}
+   
+}

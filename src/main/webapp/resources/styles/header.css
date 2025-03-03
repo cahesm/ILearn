@@ -1,0 +1,122 @@
+.nav-item.active
+{    
+    font-weight: 700;    
+    text-decoration-line: underline;
+}
+
+.nav-item
+{
+   font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;    
+    color: #000000;    
+   
+}
+
+.nav-link
+{
+    color: inherit !important;
+    padding:0px !important;
+}
+
+.nav-user-item
+{
+    box-sizing: border-box;    
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;    
+    color: #000000;    
+           
+    /*border: 1.5px solid #E8E9ED;*/
+    border-radius: 12px;   
+}
+
+
+.nav-user-item.filled
+{    
+    border: 1.5px solid #000000 !important;
+    /*background: #2EB66C;*/
+    border-radius: 12px;
+    border: none;
+}
+
+.nav-user-item a
+{
+    padding: 15px 18px !important; 
+    
+}
+
+.navbar-nav
+{
+    align-items: center;
+    gap:20px;
+}
+
+.topnavbar
+{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    background: transparent;
+    margin: 0px auto;
+    max-width: 1000px;
+    z-index: 1;
+}
+
+
+.navbar-logo
+{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-logo p
+{
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-nav .dropdown-menu {
+ position: absolute !important;   
+}
+
+.brandLabel {display: inline; color: #000000;}
+
+.top-header
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    
+}
+
+
+
+.top-header-links
+{
+    width: -webkit-fill-available;
+    display: flex;
+}
+
+.rounded-circle
+{
+    width: 20px;
+    height:20px;
+}
+

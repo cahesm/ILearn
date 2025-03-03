@@ -1,0 +1,284 @@
+.reservation-search-box
+{
+    display: flex;
+    flex-direction: row;
+    border: 0.5px solid rgba(51, 51, 51, 0.5);
+    border-radius: 5px;
+    
+}
+
+.reservation-search-buttons{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    padding: 5px;
+    width: 40px;
+}
+
+.reservation-search-button{
+    border: none;
+    background: transparent;
+}
+
+.reservation-search-button:focus{
+outline: none;
+}
+
+.reservation-search-box input {
+    border: 0px;
+    padding: 15px;
+}
+
+.reservation-result-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    
+    size: 18px;
+}
+
+
+.reservations-box
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+}
+
+.reservations-header
+{
+    width: 100%;
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*.reservations-header .dropdown
+{
+   min-width: 210px;
+   justify-content: flex-end;
+}*/
+
+.reservations-title
+{        
+    font-size: 20px;
+    color: #2EB66C;
+    font-weight: 600;
+}
+
+.reservation-box
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 5px;
+    
+/*    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px;*/
+
+    border-bottom: 1px solid lightgray;
+}
+
+.reservation-box-header
+{
+    width: 100%;
+    display: flex;
+    
+    flex-direction: row;
+    
+    justify-content: space-between;
+           
+    padding: 5px;
+    
+    border-bottom: solid 2px lightgray;
+    
+    align-items: baseline;
+    gap: 10px;
+}
+
+.reservation-box-status
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10px;
+    
+    font-size: 14px;
+}
+
+
+.reservation-box-cod
+{
+    font-weight: 700; 
+    font-size: 12px;     
+    color: dimgray; 
+/*    padding: 5px;*/
+}
+
+.reservation-box-title
+{
+   font-size: 16px;
+   color: dimgray;
+   font-weight: 700;
+   
+   text-align: center;
+   color: #2EB66C;
+}
+
+.reservation-box .nav-link
+{
+    color: dimgray !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border: 0 !important;
+    font-weight: 600 !important;
+}
+
+.reservation-box .nav-item
+{
+    margin: 0 !important;
+}
+
+.reservation-box .nav-link.active
+{
+    text-decoration: underline !important;
+    color: #F26419 !important;
+}
+
+.reservation-box .text-success,
+.reservation-box .text-danger
+{ 
+    margin-bottom: 0px !important; 
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.reservations-tabs
+{
+    padding: 20px 5px 5px 5px;
+}
+
+.reservations-payment-heading {
+    
+    text-align: left;
+    font-size: 13px;
+    
+}
+
+
+    
+
+
+.reservation-register-box
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    
+    width: 100%;
+    max-width: 500px;
+    gap:20px;
+    
+    padding: 20px;
+}
+
+.reservation-register-title
+{    
+    font-size: 20px;
+    color: #2EB66C;
+    font-weight: 600;
+}
+
+.reservations-tabs .tab-content .tab-pane
+{
+    padding: 10px;
+}
+
+.reservation-register-form form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    font-size: 16px;
+    
+    color: dimgray;
+}
+ 
+.reservation-register-form-row
+{
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-gap: 20px;
+}
+
+.reservation-register-buttons
+{
+    padding-top: 20px;
+}
+
+.form-property-label
+{
+    display: flex;
+    align-items: center;
+    
+    font-weight: 600;
+}
+
+.reservation-register-box .btn
+{
+    width: 200px;  
+}
+
+.reservation-register-box .error
+{
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.reservation-register-box input{
+    border:none !important;
+    border-bottom: 1px solid cadetblue !important;    
+    border-radius: 0px !important;
+    outline: none !important;        
+    background: transparent !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    
+}
+
+
+
+.reservation-register-box input:focus {
+    background: transparent !important;
+}
+
+.reservation-register-box input:-webkit-autofill,
+.reservation-register-box input:-webkit-autofill:hover,
+.reservation-register-box input:-webkit-autofill:focus,
+.reservation-register-box input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;    
+}
+
+
+@media only screen and (max-width: 47.5em)
+{
+    .reservation-register-box .btn
+    {
+        width: 80%;
+        margin-top: 5px;
+    }
+            
+}
+
+

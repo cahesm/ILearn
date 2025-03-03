@@ -1,0 +1,103 @@
+.account-register-box
+{
+    border-radius: 12px;
+    border: solid 2px black;
+    
+    padding: 10px;
+    
+    width: 100%;
+    max-width: 500px;
+}
+
+.account-register-title
+{
+    padding-left: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.account-register-box .error
+{
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 12px;
+}
+            
+.account-register-box .form-group {
+  display: block;
+  margin: 0px !important;
+  padding: 10px 20px 10px 20px;
+  
+}
+
+.account-register-box .form-group a{
+  font-size: 12px;
+}
+
+.account-register-box label{
+    margin: 0px !important;
+    margin-top: 5px !important;
+    color: black;
+}
+
+.account-register-box input{
+    border:none !important;
+    border-bottom: 1px solid cadetblue !important;    
+    border-radius: 0px !important;
+    outline: none !important;        
+    background: transparent !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    color: dimgray;
+    font-size: 13px;
+}
+
+.account-register-box input:focus {
+    background: transparent !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    
+}
+
+@media only screen and (min-width: 64em)
+{
+    .account-register-box form button[type="button"]
+    {
+        width: 200px;       
+    }
+    
+}
+
+@media only screen and (max-width: 63.999em)
+{
+ .account-register-box form button[type="button"]
+    {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 63.999em) and (min-width: 47.51em)
+{
+    .account-register-box form button[type="button"]
+    {
+        width: 200px;
+    }
+    
+}
+
+@media only screen and (max-width: 47.5em)
+{
+    .account-register-box form button[type="button"]
+    {
+        width: 80%;
+    }
+    
+}
+
+

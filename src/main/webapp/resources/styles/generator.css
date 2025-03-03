@@ -1,0 +1,82 @@
+
+            
+.processing-popup .form-group {
+  display: block;
+  margin: 0px !important;
+  padding: 10px 20px 10px 20px;
+  
+}
+
+.processing-popup .form-group a{
+  font-size: 12px;
+}
+
+.processing-popup label{
+    margin: 0px !important;
+    margin-top: 5px !important;
+    color: black;
+}
+
+.processing-popup input{
+    border:none !important;
+    border-bottom: 1px solid cadetblue !important;    
+    border-radius: 0px !important;
+    outline: none !important;        
+    background: transparent !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    
+    color: dimgray;
+    font-size: 13px;
+    
+}
+
+.processing-popup input:focus {
+    background: transparent !important;
+}
+
+.processing-popup input:-webkit-autofill,
+.processing-popup input:-webkit-autofill:hover,
+.processing-popup input:-webkit-autofill:focus,
+.processing-popup input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: dimgray !important;
+    
+}
+
+@media only screen and (min-width: 64em)
+{
+    .processing-popup form button[type="button"]
+    {
+        width: 200px;       
+    }
+    
+}
+
+@media only screen and (max-width: 63.999em)
+{
+ .processing-popup form button[type="button"]
+    {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 63.999em) and (min-width: 47.51em)
+{
+    .processing-popup form button[type="button"]
+    {
+        width: 200px;
+    }
+    
+}
+
+@media only screen and (max-width: 47.5em)
+{
+    .processing-popup form button[type="button"]
+    {
+        width: 80%;
+    }
+    
+}
+
+

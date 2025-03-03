@@ -1,0 +1,90 @@
+
+
+.sidemenu .topbar {
+      
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;    
+  padding-left: 10px;  
+  background: white;
+  width: 100%;
+  background: #2EB66C;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  
+}
+
+.sidemenu .closebtn {
+  
+  
+  font-size: 36px;
+  
+  color: white;
+}
+
+.loginBt
+{
+        background: aliceblue;
+        color: #2EB66C;
+}
+.userBt
+{
+    background: gainsboro;
+    color: #2EB66C;
+}
+.adminBt
+{
+    background: bisque;
+    color: #2EB66C;
+}
+
+hr
+{
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.squareBt{
+    padding-top: 10px;
+}
+
+.outsquareBt{
+
+    border: 3px solid #2EB66C;
+    width: 60px;
+    height: 60px;
+    display: inline-grid;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+
+
+}
+.insquareBt{
+
+    border: 3px solid black;
+    width: 90px;
+    height: 80px;
+    display: inline-grid;
+    align-items: center;
+    margin-left: 2px;
+
+
+}
+
+.squareBt i{
+
+    font-size: 32px;
+
+}
+
+.squareBt p{
+
+    font-size: 12px;
+    font-weight: 600;
+    color: dimgray;
+
+}
